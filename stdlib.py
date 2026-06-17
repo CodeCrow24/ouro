@@ -1,0 +1,3 @@
+# Standart Extra Functions
+
+# NONE - BITCH YOU THINK I IMPLEMENT FUNCTIONS ON THE FIRST DAY????????
