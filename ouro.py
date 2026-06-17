@@ -87,5 +87,6 @@ def main(file):
 
 try:
     main(file_content)
+    input("\nPress Enter to exit...")
 except PillError as e:
     print(e)

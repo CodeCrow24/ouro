@@ -1,5 +1,6 @@
 def handle_print(line, i):
-    print("hello my friend")
+    for token in line[1:]:
+        print(token)
 
 def handle_input(line, i):
     return
