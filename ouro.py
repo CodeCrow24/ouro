@@ -45,19 +45,19 @@ def handle_line(line, i):
     # Handle Token 0
     match tokens[0]:
         case "out":
-            inbuilt.handle_print(tokens, i)
+            inbuilt.handle_print(tokens, line, i)
         case "in":
-            inbuilt.handle_input(tokens, i)
+            inbuilt.handle_input(tokens, line, i)
         case "set":
-            inbuilt.handle_var(tokens, i)
+            inbuilt.handle_var(tokens, line, i)
         case "if":
-            inbuilt.handle_if(tokens, i)
+            inbuilt.handle_if(tokens, line, i)
         case "for":
-            inbuilt.handle_for(tokens, i)
+            inbuilt.handle_for(tokens, line, i)
         case "stop":
-            inbuilt.handle_stop(tokens, i)
+            inbuilt.handle_stop(tokens, line, i)
         case "verbose":
-            inbuilt.handle_verbose(tokens, i)
+            inbuilt.handle_verbose(tokens, line, i)
 
 
 #main environment:
@@ -88,5 +88,6 @@ def main(file):
 try:
     main(file_content)
     input("\nPress Enter to exit...")
-except PillError as e:
+except OuroError as e:
     print(e)
+    input("\nPress Enter to exit...")
