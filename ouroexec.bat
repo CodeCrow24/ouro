@@ -1,3 +1,3 @@
 @echo off
-python "C:\Users\Rogue One\Desktop\Ouro\ouro.py" "%~1"
+python "%~dp0pill.py" "%~1"
 pause
