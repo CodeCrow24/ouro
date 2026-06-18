@@ -7,6 +7,6 @@ To install do this:
 1. Open CMD as Admin
 2. Run `assoc .our=OuroFile`
 3. Run `ftype OuroFile="C:\OuroInstallLocation\execouro.bat" "%1"`
-4. Run `reg add "HLCR\OuroFike /vc /d "Ouro File" /f`
+4. Run `reg add "HLCR\OuroFile /vc /d "Ouro File" /f`
 5. Run `reg add "HKCR\OuroFile\DefaultIcon" /ve /d "C:\OuroInstallLocation\ouro.ico,0" /f`
 6.  Finished
