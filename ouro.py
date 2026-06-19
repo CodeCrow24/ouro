@@ -1,5 +1,9 @@
 import sys
 import inbuilt
+import time
+
+#start timer
+start_time = time.time()
 
 #error types
 class OuroError(Exception):
@@ -110,6 +114,7 @@ def main(file):
 
 try:
     main(file_content)
+    print(f'--- {time.time() - start_time} seconds  ---')
     input("\nPress Enter to exit...")
 except OuroError as e:
     print(e)
